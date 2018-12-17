@@ -102,7 +102,7 @@
             this.Name = "PromptToSaveDlg";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Sandcastle Help File Builder";
+            this.Text = "Sandcastle Help File Builder -- DP Edition";
             this.ResumeLayout(false);
 
         }

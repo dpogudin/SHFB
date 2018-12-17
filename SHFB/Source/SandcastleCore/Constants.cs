@@ -38,7 +38,7 @@ namespace Sandcastle.Core
         public const string CompanyName = "EWSoftware";
 
         /// <summary>The application name</summary>
-        public const string AppName = "Sandcastle Help File Builder";
+        public const string AppName = "Sandcastle Help File Builder -- DP Edition";
 
         /// <summary>The default presentation style</summary>
         public const string DefaultPresentationStyle = "VS2013";

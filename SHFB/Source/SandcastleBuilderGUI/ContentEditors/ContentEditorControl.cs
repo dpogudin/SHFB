@@ -199,5 +199,21 @@ namespace SandcastleBuilder.Gui.ContentEditors
             action.Execute(this.ActiveTextAreaControl.TextArea);
         }
         #endregion
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // textAreaPanel
+            // 
+            this.textAreaPanel.Size = new System.Drawing.Size(192, 151);
+            // 
+            // ContentEditorControl
+            // 
+            this.Name = "ContentEditorControl";
+            this.Size = new System.Drawing.Size(192, 151);
+            this.ResumeLayout(false);
+
+        }
     }
 }

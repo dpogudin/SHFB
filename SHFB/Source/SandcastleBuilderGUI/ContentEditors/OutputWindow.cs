@@ -238,8 +238,6 @@ namespace SandcastleBuilder.Gui.ContentEditors
                     }
                 }
             }
-            Application.OpenForms[0].Text = txt;
-            
         }
     }
 }

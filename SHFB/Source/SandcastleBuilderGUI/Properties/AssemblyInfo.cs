@@ -27,7 +27,7 @@ using System.Reflection;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //
-[assembly: AssemblyTitle("Sandcastle Help File Builder GUI")]
+[assembly: AssemblyTitle("Sandcastle Help File Builder -- DP Edition")]
 [assembly: AssemblyDescription("An IDE used to create project files that build " +
     "help documentation in various formats with Microsoft's Sandcastle tools.")]
 

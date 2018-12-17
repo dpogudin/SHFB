@@ -418,6 +418,9 @@
     <EmbeddedResource Include="ContentEditors\BaseContentEditor.resx">
       <DependentUpon>BaseContentEditor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ContentEditors\ContentEditorControl.resx">
+      <DependentUpon>ContentEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ContentEditors\EntityReferenceWindow.resx">
       <DependentUpon>EntityReferenceWindow.cs</DependentUpon>
       <SubType>Designer</SubType>

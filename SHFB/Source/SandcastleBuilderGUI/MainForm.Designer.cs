@@ -86,9 +86,9 @@ namespace SandcastleBuilder.Gui
             this.miViewOpenXml = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator19 = new System.Windows.Forms.ToolStripSeparator();
             this.miOpenHelpAfterBuild = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsbViewHelpFile = new System.Windows.Forms.ToolStripSplitButton();
             this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.miCleanOutput = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsbViewHelpFile = new System.Windows.Forms.ToolStripSplitButton();
             this.tcbConfig = new System.Windows.Forms.ToolStripComboBox();
             this.tcbPlatform = new System.Windows.Forms.ToolStripComboBox();
             this.miWindow = new System.Windows.Forms.ToolStripMenuItem();
@@ -437,7 +437,7 @@ namespace SandcastleBuilder.Gui
             this.toolStripSeparator19,
             this.miOpenHelpAfterBuild});
             this.ctxViewHelpMenu.Name = "ctxViewHelpMenu";
-            this.ctxViewHelpMenu.OwnerItem = this.tsbViewHelpFile;
+            this.ctxViewHelpMenu.OwnerItem = this.miViewHelp;
             this.ctxViewHelpMenu.Size = new System.Drawing.Size(398, 216);
             this.ctxViewHelpMenu.Opening += new System.ComponentModel.CancelEventHandler(this.ctxViewHelpMenu_Opening);
             // 
@@ -526,19 +526,6 @@ namespace SandcastleBuilder.Gui
             this.miOpenHelpAfterBuild.Text = "&Open help file after successful build";
             this.miOpenHelpAfterBuild.Click += new System.EventHandler(this.miOpenHelpAfterBuild_Click);
             // 
-            // toolStripSeparator9
-            // 
-            this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(241, 6);
-            // 
-            // miCleanOutput
-            // 
-            this.miCleanOutput.Name = "miCleanOutput";
-            this.miCleanOutput.Size = new System.Drawing.Size(244, 26);
-            this.sbStatusBarText.SetStatusBarText(this.miCleanOutput, "Clean the output folder by deleting all files in it");
-            this.miCleanOutput.Text = "Clea&n Output Folder";
-            this.miCleanOutput.Click += new System.EventHandler(this.miCleanOutput_Click);
-            // 
             // tsbViewHelpFile
             // 
             this.tsbViewHelpFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -551,6 +538,19 @@ namespace SandcastleBuilder.Gui
             this.sbStatusBarText.SetStatusBarText(this.tsbViewHelpFile, "View the help file produced by the last build");
             this.tsbViewHelpFile.ToolTipText = "View help file from last build";
             this.tsbViewHelpFile.ButtonClick += new System.EventHandler(this.miViewHelpFile_Click);
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(241, 6);
+            // 
+            // miCleanOutput
+            // 
+            this.miCleanOutput.Name = "miCleanOutput";
+            this.miCleanOutput.Size = new System.Drawing.Size(244, 26);
+            this.sbStatusBarText.SetStatusBarText(this.miCleanOutput, "Clean the output folder by deleting all files in it");
+            this.miCleanOutput.Text = "Clea&n Output Folder";
+            this.miCleanOutput.Click += new System.EventHandler(this.miCleanOutput_Click);
             // 
             // tcbConfig
             // 
@@ -965,7 +965,7 @@ namespace SandcastleBuilder.Gui
             this.MainMenuStrip = this.mnuMain;
             this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "MainForm";
-            this.Text = "Sandcastle Help File Builder";
+            this.Text = "Sandcastle Help File Builder -- DP Edition";
             this.Activated += new System.EventHandler(this.MainForm_Activated);
             this.Deactivate += new System.EventHandler(this.MainForm_Deactivate);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);

@@ -130,7 +130,7 @@
             this.lnkProjectSite.Size = new System.Drawing.Size(326, 26);
             this.lnkProjectSite.TabIndex = 8;
             this.lnkProjectSite.TabStop = true;
-            this.lnkProjectSite.Text = "Sandcastle Help File Builder";
+            this.lnkProjectSite.Text = "Sandcastle Help File Builder -- DP Edition";
             this.lnkProjectSite.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.lnkProjectSite, "https://GitHub.com/EWSoftware/SHFB");
             this.lnkProjectSite.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkProjectSite_LinkClicked);
