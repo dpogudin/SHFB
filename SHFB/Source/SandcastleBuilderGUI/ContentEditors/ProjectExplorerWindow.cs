@@ -2460,5 +2460,14 @@ namespace SandcastleBuilder.Gui.ContentEditors
             }
         }
         #endregion
+
+        private void tvProjectFiles_DoubleClick(object sender, EventArgs e)
+        {
+            var tag = tvProjectFiles.SelectedNode.Tag as NodeData;
+            if(tag != null && tag.BuildAction == BuildAction.Project)
+            {
+                MainForm.Host.ProjectProperties.Activate();
+            }            
+        }
     }
 }

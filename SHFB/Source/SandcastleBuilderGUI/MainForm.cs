@@ -1594,7 +1594,7 @@ namespace SandcastleBuilder.Gui
         /// <param name="e">The event arguments</param>
         private void miClose_Click(object sender, EventArgs e)
         {
-            dockPanel.CheckFocusedContent();    // HACK
+            //dockPanel.CheckFocusedContent();    // HACK
             BaseContentEditor content = dockPanel.ActiveContent as BaseContentEditor;
 
             if(content == null)
@@ -1647,7 +1647,7 @@ namespace SandcastleBuilder.Gui
         /// <param name="e">The event arguments</param>
         private void miSave_Click(object sender, EventArgs e)
         {
-            dockPanel.CheckFocusedContent();    // HACK
+            //dockPanel.CheckFocusedContent();    // HACK
             BaseContentEditor content = dockPanel.ActiveContent as BaseContentEditor;
 
             // Save the project by default
@@ -1665,7 +1665,7 @@ namespace SandcastleBuilder.Gui
         /// <param name="e">The event arguments</param>
         private void miSaveAs_Click(object sender, EventArgs e)
         {
-            dockPanel.CheckFocusedContent();    // HACK
+            //dockPanel.CheckFocusedContent();    // HACK
             BaseContentEditor content = dockPanel.ActiveContent as BaseContentEditor;
 
             if(content == null)
@@ -1788,7 +1788,7 @@ namespace SandcastleBuilder.Gui
             TopicEditorWindow editor;
             FileItem fileItem = null;
 
-            dockPanel.CheckFocusedContent();    // HACK
+            //dockPanel.CheckFocusedContent();    // HACK
             editor = dockPanel.ActiveDocument as TopicEditorWindow;
 
             // If we are in a topic editor, show it by default when the previewer opens
