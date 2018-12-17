@@ -265,7 +265,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             this.miUI,
             this.miUserInput});
             this.tsbInsertElement.Name = "tsbInsertElement";
-            this.tsbInsertElement.Size = new System.Drawing.Size(58, 28);
+            this.tsbInsertElement.Size = new System.Drawing.Size(52, 28);
             this.tsbInsertElement.Text = "alert";
             this.tsbInsertElement.ToolTipText = "Insert <alert>";
             this.tsbInsertElement.ButtonClick += new System.EventHandler(this.tsbInsertElement_ButtonClick);
@@ -273,7 +273,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             // miAlert
             // 
             this.miAlert.Name = "miAlert";
-            this.miAlert.Size = new System.Drawing.Size(221, 26);
+            this.miAlert.Size = new System.Drawing.Size(204, 24);
             this.miAlert.Text = "alert";
             this.miAlert.ToolTipText = "Insert <alert>";
             this.miAlert.Click += new System.EventHandler(this.miAlert_Click);
@@ -281,7 +281,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             // miCode
             // 
             this.miCode.Name = "miCode";
-            this.miCode.Size = new System.Drawing.Size(221, 26);
+            this.miCode.Size = new System.Drawing.Size(204, 24);
             this.miCode.Text = "code";
             this.miCode.ToolTipText = "Insert <code>";
             this.miCode.Click += new System.EventHandler(this.miCode_Click);
@@ -289,7 +289,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             // miDefinitionTable
             // 
             this.miDefinitionTable.Name = "miDefinitionTable";
-            this.miDefinitionTable.Size = new System.Drawing.Size(221, 26);
+            this.miDefinitionTable.Size = new System.Drawing.Size(204, 24);
             this.miDefinitionTable.Text = "definitionTable";
             this.miDefinitionTable.ToolTipText = "Insert <definitionTable>";
             this.miDefinitionTable.Click += new System.EventHandler(this.miDefinitionTable_Click);
@@ -297,7 +297,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             // miSection
             // 
             this.miSection.Name = "miSection";
-            this.miSection.Size = new System.Drawing.Size(221, 26);
+            this.miSection.Size = new System.Drawing.Size(204, 24);
             this.miSection.Text = "section";
             this.miSection.ToolTipText = "Insert <section>";
             this.miSection.Click += new System.EventHandler(this.miSection_Click);
@@ -305,7 +305,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             // miQuote
             // 
             this.miQuote.Name = "miQuote";
-            this.miQuote.Size = new System.Drawing.Size(221, 26);
+            this.miQuote.Size = new System.Drawing.Size(204, 24);
             this.miQuote.Text = "quote";
             this.miQuote.ToolTipText = "Insert <quote>";
             this.miQuote.Click += new System.EventHandler(this.insertElement_Click);
@@ -313,12 +313,12 @@ namespace SandcastleBuilder.Gui.ContentEditors
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(218, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(201, 6);
             // 
             // miApplication
             // 
             this.miApplication.Name = "miApplication";
-            this.miApplication.Size = new System.Drawing.Size(221, 26);
+            this.miApplication.Size = new System.Drawing.Size(204, 24);
             this.miApplication.Text = "application";
             this.miApplication.ToolTipText = "Insert <application>";
             this.miApplication.Click += new System.EventHandler(this.insertElement_Click);
@@ -326,7 +326,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             // miCommand
             // 
             this.miCommand.Name = "miCommand";
-            this.miCommand.Size = new System.Drawing.Size(221, 26);
+            this.miCommand.Size = new System.Drawing.Size(204, 24);
             this.miCommand.Text = "command";
             this.miCommand.ToolTipText = "Insert <command>";
             this.miCommand.Click += new System.EventHandler(this.insertElement_Click);
@@ -334,7 +334,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             // miEnvironmentVariable
             // 
             this.miEnvironmentVariable.Name = "miEnvironmentVariable";
-            this.miEnvironmentVariable.Size = new System.Drawing.Size(221, 26);
+            this.miEnvironmentVariable.Size = new System.Drawing.Size(204, 24);
             this.miEnvironmentVariable.Text = "environmentVariable";
             this.miEnvironmentVariable.ToolTipText = "Insert <environmentVariable>";
             this.miEnvironmentVariable.Click += new System.EventHandler(this.insertElement_Click);
@@ -342,7 +342,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             // miHardware
             // 
             this.miHardware.Name = "miHardware";
-            this.miHardware.Size = new System.Drawing.Size(221, 26);
+            this.miHardware.Size = new System.Drawing.Size(204, 24);
             this.miHardware.Text = "hardware";
             this.miHardware.ToolTipText = "Insert <hardware>";
             this.miHardware.Click += new System.EventHandler(this.insertElement_Click);
@@ -350,7 +350,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             // miLiteral
             // 
             this.miLiteral.Name = "miLiteral";
-            this.miLiteral.Size = new System.Drawing.Size(221, 26);
+            this.miLiteral.Size = new System.Drawing.Size(204, 24);
             this.miLiteral.Text = "literal";
             this.miLiteral.ToolTipText = "Insert <literal>";
             this.miLiteral.Click += new System.EventHandler(this.insertElement_Click);
@@ -358,7 +358,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             // miLocalUri
             // 
             this.miLocalUri.Name = "miLocalUri";
-            this.miLocalUri.Size = new System.Drawing.Size(221, 26);
+            this.miLocalUri.Size = new System.Drawing.Size(204, 24);
             this.miLocalUri.Text = "localUri";
             this.miLocalUri.ToolTipText = "Insert <localUri>";
             this.miLocalUri.Click += new System.EventHandler(this.insertElement_Click);
@@ -366,7 +366,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             // miMath
             // 
             this.miMath.Name = "miMath";
-            this.miMath.Size = new System.Drawing.Size(221, 26);
+            this.miMath.Size = new System.Drawing.Size(204, 24);
             this.miMath.Text = "math";
             this.miMath.ToolTipText = "Insert <math>";
             this.miMath.Click += new System.EventHandler(this.insertElement_Click);
@@ -374,7 +374,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             // miNewTerm
             // 
             this.miNewTerm.Name = "miNewTerm";
-            this.miNewTerm.Size = new System.Drawing.Size(221, 26);
+            this.miNewTerm.Size = new System.Drawing.Size(204, 24);
             this.miNewTerm.Text = "newTerm";
             this.miNewTerm.ToolTipText = "Insert <newTerm>";
             this.miNewTerm.Click += new System.EventHandler(this.insertElement_Click);
@@ -382,7 +382,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             // miPara
             // 
             this.miPara.Name = "miPara";
-            this.miPara.Size = new System.Drawing.Size(221, 26);
+            this.miPara.Size = new System.Drawing.Size(204, 24);
             this.miPara.Text = "para";
             this.miPara.ToolTipText = "Insert <para>";
             this.miPara.Click += new System.EventHandler(this.insertElement_Click);
@@ -390,7 +390,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             // miPhrase
             // 
             this.miPhrase.Name = "miPhrase";
-            this.miPhrase.Size = new System.Drawing.Size(221, 26);
+            this.miPhrase.Size = new System.Drawing.Size(204, 24);
             this.miPhrase.Text = "phrase";
             this.miPhrase.ToolTipText = "Insert <phrase>";
             this.miPhrase.Click += new System.EventHandler(this.insertElement_Click);
@@ -398,7 +398,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             // miQuoteInline
             // 
             this.miQuoteInline.Name = "miQuoteInline";
-            this.miQuoteInline.Size = new System.Drawing.Size(221, 26);
+            this.miQuoteInline.Size = new System.Drawing.Size(204, 24);
             this.miQuoteInline.Text = "quoteInline";
             this.miQuoteInline.ToolTipText = "Insert <quoteInline>";
             this.miQuoteInline.Click += new System.EventHandler(this.insertElement_Click);
@@ -406,7 +406,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             // miReplaceable
             // 
             this.miReplaceable.Name = "miReplaceable";
-            this.miReplaceable.Size = new System.Drawing.Size(221, 26);
+            this.miReplaceable.Size = new System.Drawing.Size(204, 24);
             this.miReplaceable.Text = "replaceable";
             this.miReplaceable.ToolTipText = "Insert <replaceable>";
             this.miReplaceable.Click += new System.EventHandler(this.insertElement_Click);
@@ -414,7 +414,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             // miSubscript
             // 
             this.miSubscript.Name = "miSubscript";
-            this.miSubscript.Size = new System.Drawing.Size(221, 26);
+            this.miSubscript.Size = new System.Drawing.Size(204, 24);
             this.miSubscript.Text = "subscript";
             this.miSubscript.ToolTipText = "Insert <subscript>";
             this.miSubscript.Click += new System.EventHandler(this.insertElement_Click);
@@ -422,7 +422,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             // miSuperscript
             // 
             this.miSuperscript.Name = "miSuperscript";
-            this.miSuperscript.Size = new System.Drawing.Size(221, 26);
+            this.miSuperscript.Size = new System.Drawing.Size(204, 24);
             this.miSuperscript.Text = "superscript";
             this.miSuperscript.ToolTipText = "Insert <superscript>";
             this.miSuperscript.Click += new System.EventHandler(this.insertElement_Click);
@@ -430,7 +430,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             // miSystem
             // 
             this.miSystem.Name = "miSystem";
-            this.miSystem.Size = new System.Drawing.Size(221, 26);
+            this.miSystem.Size = new System.Drawing.Size(204, 24);
             this.miSystem.Text = "system";
             this.miSystem.ToolTipText = "Insert <system>";
             this.miSystem.Click += new System.EventHandler(this.insertElement_Click);
@@ -438,7 +438,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             // miUI
             // 
             this.miUI.Name = "miUI";
-            this.miUI.Size = new System.Drawing.Size(221, 26);
+            this.miUI.Size = new System.Drawing.Size(204, 24);
             this.miUI.Text = "ui";
             this.miUI.ToolTipText = "Insert <ui>";
             this.miUI.Click += new System.EventHandler(this.insertElement_Click);
@@ -446,7 +446,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             // miUserInput
             // 
             this.miUserInput.Name = "miUserInput";
-            this.miUserInput.Size = new System.Drawing.Size(221, 26);
+            this.miUserInput.Size = new System.Drawing.Size(204, 24);
             this.miUserInput.Text = "userInput";
             this.miUserInput.ToolTipText = "Insert <userInput>";
             this.miUserInput.Click += new System.EventHandler(this.insertElement_Click);

@@ -211,5 +211,35 @@ namespace SandcastleBuilder.Gui.ContentEditors
             tcbViewOutput.Enabled = !isBuilding;
         }
         #endregion
+
+        private void txtBuildOutput_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            int index = txtBuildOutput.SelectionStart;
+            int line = txtBuildOutput.GetLineFromCharIndex(index);
+            var txt = txtBuildOutput.Lines[line];
+
+            if(txt.IndexOf("Error") > 0)
+            {
+                var fileI = txt.IndexOf("file ");
+                if(fileI >= 0)
+                {
+                    var firstQuote = txt.IndexOf("'", fileI);
+                    if(firstQuote > 0)
+                    {
+                        var secondQuote = txt.IndexOf("'", firstQuote + 1);
+                        if(secondQuote > 0)
+                        {
+                            var fullFileName = txt.Substring(firstQuote+1, secondQuote - firstQuote-1);
+                            if(File.Exists(fullFileName))
+                            {
+                                MainForm.Host.ProjectExplorer.EditFile(fullFileName, 0);
+                            }
+                        }
+                    }
+                }
+            }
+            Application.OpenForms[0].Text = txt;
+            
+        }
     }
 }

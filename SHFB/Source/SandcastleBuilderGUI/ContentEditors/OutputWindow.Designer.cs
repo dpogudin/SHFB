@@ -51,13 +51,13 @@ namespace SandcastleBuilder.Gui.ContentEditors
             this.tslLogFile});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(473, 33);
+            this.toolStrip1.Size = new System.Drawing.Size(473, 27);
             this.toolStrip1.TabIndex = 0;
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(159, 30);
+            this.toolStripLabel1.Size = new System.Drawing.Size(121, 24);
             this.toolStripLabel1.Text = "&Show output from";
             // 
             // tcbViewOutput
@@ -67,7 +67,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             "Build",
             "Log File"});
             this.tcbViewOutput.Name = "tcbViewOutput";
-            this.tcbViewOutput.Size = new System.Drawing.Size(121, 33);
+            this.tcbViewOutput.Size = new System.Drawing.Size(121, 27);
             this.statusBarTextProvider1.SetStatusBarText(this.tcbViewOutput, "Select the output to view");
             this.tcbViewOutput.SelectedIndexChanged += new System.EventHandler(this.tcbViewOutput_SelectedIndexChanged);
             // 
@@ -76,7 +76,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             this.tslLogFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.tslLogFile.Name = "tslLogFile";
             this.tslLogFile.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.tslLogFile.Size = new System.Drawing.Size(10, 30);
+            this.tslLogFile.Size = new System.Drawing.Size(10, 24);
             // 
             // txtBuildOutput
             // 
@@ -85,21 +85,22 @@ namespace SandcastleBuilder.Gui.ContentEditors
             this.txtBuildOutput.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtBuildOutput.Font = new System.Drawing.Font("Courier New", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuildOutput.HideSelection = false;
-            this.txtBuildOutput.Location = new System.Drawing.Point(0, 33);
+            this.txtBuildOutput.Location = new System.Drawing.Point(0, 27);
             this.txtBuildOutput.Name = "txtBuildOutput";
             this.txtBuildOutput.ReadOnly = true;
-            this.txtBuildOutput.Size = new System.Drawing.Size(473, 250);
+            this.txtBuildOutput.Size = new System.Drawing.Size(473, 256);
             this.statusBarTextProvider1.SetStatusBarText(this.txtBuildOutput, "Build output");
             this.txtBuildOutput.TabIndex = 1;
             this.txtBuildOutput.Text = "";
             this.txtBuildOutput.WordWrap = false;
+            this.txtBuildOutput.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.txtBuildOutput_MouseDoubleClick);
             // 
             // ehLogViewer
             // 
             this.ehLogViewer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ehLogViewer.Location = new System.Drawing.Point(0, 33);
+            this.ehLogViewer.Location = new System.Drawing.Point(0, 27);
             this.ehLogViewer.Name = "ehLogViewer";
-            this.ehLogViewer.Size = new System.Drawing.Size(473, 250);
+            this.ehLogViewer.Size = new System.Drawing.Size(473, 256);
             this.statusBarTextProvider1.SetStatusBarText(this.ehLogViewer, "Build log content");
             this.ehLogViewer.TabIndex = 2;
             this.ehLogViewer.Visible = false;

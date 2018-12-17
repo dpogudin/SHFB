@@ -694,6 +694,47 @@ namespace SandcastleBuilder.Gui.ContentEditors
                         Constants.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        public void EditFile(string fullName, int ln)
+        {                       
+            DockContent editor;
+            FileItem fileItem = this.CurrentProject.FindFile(fullName);
+            string ext;
+            //fullName = fileItem.IncludePath;
+            ext = Path.GetExtension(fullName);
+
+            // If the document is already open, just activate it
+            foreach(IDockContent content in this.DockPanel.Contents)
+                if(String.Compare(content.DockHandler.ToolTipText, fullName, true, CultureInfo.CurrentCulture) == 0)
+                {
+                    content.DockHandler.Activate();
+                    return;
+                }
+
+            if(!File.Exists(fullName))
+            {
+                MessageBox.Show("File does not exist: " + fullName, Constants.AppName, MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+                return;
+            }
+
+            // Give preference to the external editors if any are defined
+            foreach(ContentFileEditor fileEditor in ContentFileEditorCollection.GlobalEditors)
+                if(fileEditor.IsEditorFor(ext))
+                    if(ContentFileEditorCollection.GlobalEditors.LaunchEditorFor(fullName, currentProject.Filename))
+                        return;
+
+            // Try for a built-in editor
+            editor = this.CreateFileEditor(fullName, fileItem);
+
+            if(editor != null)
+                editor.Show(this.DockPanel);
+            else
+                if(!ContentFileEditorCollection.GlobalEditors.LaunchEditorFor(fullName, currentProject.Filename))
+                    MessageBox.Show(String.Format(CultureInfo.CurrentCulture,
+                        "Unable to launch '{0}' for editing.  Reason: {1}", fullName,
+                        ContentFileEditorCollection.GlobalEditors.LastError.Message),
+                        Constants.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
         /// <summary>
         /// This is used to determine whether or not the Open with Text Editor context menu option is shown
         /// </summary>
@@ -856,8 +897,19 @@ namespace SandcastleBuilder.Gui.ContentEditors
         /// <param name="e">The event arguments</param>
         private void tvProjectFiles_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
         {
+
             if(e.Button == MouseButtons.Left)
-                this.EditNodeFile(e.Node);
+            {
+                var tag = e.Node.Tag as NodeData;
+                if(tag != null && tag.BuildAction == BuildAction.Project)
+                {
+                    MainForm.Host.ProjectProperties.Activate();
+                }
+                else
+                {
+                    this.EditNodeFile(e.Node);
+                }
+            }
         }
 
         /// <summary>
