@@ -80,6 +80,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             this.tsbRedo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.tsbSpellCheck = new System.Windows.Forms.ToolStripButton();
+            this.codeEntityReferenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -248,6 +249,7 @@ namespace SandcastleBuilder.Gui.ContentEditors
             this.miQuote,
             this.toolStripSeparator7,
             this.miApplication,
+            this.codeEntityReferenceToolStripMenuItem,
             this.miCommand,
             this.miEnvironmentVariable,
             this.miHardware,
@@ -541,6 +543,13 @@ namespace SandcastleBuilder.Gui.ContentEditors
             this.tsbSpellCheck.ToolTipText = "Spell Check (Ctrl+Shift+K)";
             this.tsbSpellCheck.Click += new System.EventHandler(this.tsbSpellCheck_Click);
             // 
+            // codeEntityReferenceToolStripMenuItem
+            // 
+            this.codeEntityReferenceToolStripMenuItem.Name = "codeEntityReferenceToolStripMenuItem";
+            this.codeEntityReferenceToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
+            this.codeEntityReferenceToolStripMenuItem.Text = "codeEntityReference";
+            this.codeEntityReferenceToolStripMenuItem.Click += new System.EventHandler(this.insertElement_Click);
+            // 
             // TopicEditorWindow
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -610,5 +619,6 @@ namespace SandcastleBuilder.Gui.ContentEditors
         private System.Windows.Forms.ToolStripMenuItem miAlert;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
         private System.Windows.Forms.ToolStripButton tsbSpellCheck;
+        private System.Windows.Forms.ToolStripMenuItem codeEntityReferenceToolStripMenuItem;
     }
 }
